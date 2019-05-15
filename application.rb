@@ -5,7 +5,11 @@ class Application
     resp.write "Hello, World"
     resp.finish
   end
-
+def last_response(env)
+  resp = Rack::Response.new 
+  resp.write "Hello, my name is Nataliya"
+  resp.finish
+end
 
 end
 
